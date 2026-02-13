@@ -1,0 +1,17 @@
+name = "kst-telegram-bot"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+# Переменные окружения (секреты устанавливаются через wrangler secret put)
+# BOT_TOKEN - токен бота от @BotFather
+# BOT_OWNER_ID - ID владельца бота (опционально)
+# WEBHOOK_SECRET - секретный ключ для проверки webhook (опционально)
+
+# KV Namespaces для хранения конфигураций
+# Создайте через: wrangler kv:namespace create "CONFIG"
+# Затем добавьте сюда:
+# [[kv_namespaces]]
+# binding = "CONFIG"
+# id = "your-kv-namespace-id"
+# preview_id = "your-preview-kv-namespace-id"
+
